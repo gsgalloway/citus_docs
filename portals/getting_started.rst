@@ -9,6 +9,7 @@ Welcome to Citus. As you begin it helps to take some time to get oriented.
 
 * For a short description, along with a brief discussion of use-cases see, :ref:`what_is_citus` This is a good place to determine how Citus fits your needs.
 * Then read :ref:`introduction_to_citus` to get an overview of how the parts fit together. The terms described there are used throughout the documentation, so it's best to become familiar with them.
+* These docs use a number of common terms which the :ref:`citus_concepts` section explains.
 
 If you've found that Citus looks good for your use-case, the best way to learn more is to try it for yourself. The extension is available both as an open-source PostgreSQL extension that you can install on your own machine, or as managed Database-as-a-Service.
 
