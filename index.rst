@@ -146,6 +146,7 @@ Welcome to the documentation for Citus 7.0! Citus horizontally scales PostgreSQL
 
    reference/citus_sql_reference.rst
    reference/sql_workarounds.rst
+   reference/useful_queries.rst
    reference/user_defined_functions.rst
    reference/metadata_tables.rst
    reference/configuration.rst
