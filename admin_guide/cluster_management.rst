@@ -193,8 +193,8 @@ The coordinator node needs to know roles' passwords in order to communicate with
 
 Sometimes workers need to connect to one another, such as during :ref:`repartition joins <repartition_joins>`. Thus each worker node requires a copy of the .pgpass file as well.
 
-Diagnostics
-###########
+Useful Diagnostic Queries
+#########################
 
 .. _row_placements:
 
