@@ -46,11 +46,9 @@ Scaling Out (adding new nodes)
 
 Node addition completes in five to ten minutes, which is faster than node resizing because the new nodes are created without data. To take advantage of the new nodes you still must adjust manually rebalance the shards, meaning move some shards from existing nodes to the new ones.
 
-Citus does not automatically rebalance on node creation because shard rebalancing takes locks on rows whose shards are being moved, degrading write performance for other database clients. The slowdown isn't terribly severe because Citus moves data a shard (or a group of colocated shards) at a time while inserts to other shards can continue normally. However, for maximum control, the choice of when to run the shard rebalancer is left to the database administrator.
+You can go to the "Rebalancer" tab in the Cloud console to see the shard balance across nodes. This page will show a "Rebalance recommended" message if the shards could be placed more evenly, such as after a new node has been added to the cluster. Otherwise it says, "No rebalance required."
 
-You can go to the "Rebalancer" tab in the Cloud console to see the shard balance across nodes. This page will show a "Rebalance recommended" message if the shards could be placed more evenly, such as when a new node is available in the cluster. Otherwise it says, "No rebalance required."
-
-To start the shard rebalancer, connect to the cluster coordinator node with psql and run:
+For maximum control, the choice of when to run the shard rebalancer is left to the database administrator. Citus does not automatically rebalance on node creation. To start the shard rebalancer, connect to the cluster coordinator node with psql and run:
 
 .. code-block:: postgres
 
